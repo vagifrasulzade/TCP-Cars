@@ -24,7 +24,7 @@ while (true)
     {
         var input = br.ReadString();
         var command = JsonSerializer.Deserialize<Command>(input);
-
+        
         switch (command!.Text)
         {
             case Command.Get:
